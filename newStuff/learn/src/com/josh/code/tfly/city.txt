@@ -1,0 +1,4 @@
+San Fran, lat: 300 , long: 400
+Palo Alto, lat: 500 , long: 500
+	Palo skip Alto, long: 500
+Los Gatos,  lat: 600 , long: 600
