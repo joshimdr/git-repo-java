@@ -15,21 +15,24 @@ public class LRUCache2 {
 	Node head;
 	Node tail;
 	int capacity = 10;
+	long expiryInMillis = 10000;
 
 	public Node getNode(Integer key) {
 
 		Node returnNode = null;
-		if (cacheMap.containsKey(key)) {
-
-			returnNode = cacheMap.get(key);
-
-			// remove node from the cache
-			removeNode(returnNode);
+		long currentTimeInMillis = System.currentTimeMillis();
+		
+		Node nfound =  cacheMap.get(key);
+		
+		if (nfound!=null) {
+			
+			// remove node from the cache and put it in the head of the list
+			removeNode(nfound);
 
 			// set return node to the head
-			setHead(returnNode);
+			setHead(nfound);
 
-			return returnNode;
+			return nfound;
 
 		}
 
@@ -98,6 +101,7 @@ class Node {
 	Object value;
 	Node prev = null;
 	Node next = null;
+	static long timestmapInMillis = 0;
 
 	public Node() {
 
