@@ -34,11 +34,14 @@ public class Helper {
 	public static void print(Object obj) {
 		if (obj instanceof List<?>) {
 			List list = (List) obj;
+			System.out.println("");
+			System.out.print("{");
 			for (Iterator iterator = list.iterator(); iterator.hasNext();) {
 				Object object = (Object) iterator.next();
-				System.out.println(object);
+				System.out.print(object);
+				System.out.print(" ");
 			}
-
+			System.out.print("}");
 		} else if (obj instanceof Map<?, ?>) {
 			Map m = (Map) obj;
 			Set keySet = m.keySet();

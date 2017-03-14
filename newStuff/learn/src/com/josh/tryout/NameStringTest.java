@@ -26,7 +26,7 @@ public class NameStringTest {
 	@Test
 	public final void testLastNameFirstName() {
 
-		String lastNameFirstName = "Joshi,Munish";
+		String lastNameFirstName = "Joshi, Munish";
 
 		assertEquals(new NameString(lastNameFirstName).firstName, "Munish");
 		assertEquals(new NameString(lastNameFirstName).lastName, "Joshi");
