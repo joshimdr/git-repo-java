@@ -1,15 +1,18 @@
 /**
  * 
  */
-package com.josh.code.general;
+package com.josh.code.general2;
 
+import java.sql.Connection;
 import java.util.HashMap;
+import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @author munish
  *
  */
-public class LRUCache2 {
+public class LRUExpiringCache {
 
 	HashMap<Integer, Node> cacheMap = new HashMap<Integer, Node>();
 	Node head;
@@ -21,11 +24,11 @@ public class LRUCache2 {
 
 		Node returnNode = null;
 		long currentTimeInMillis = System.currentTimeMillis();
-		
-		Node nfound =  cacheMap.get(key);
-		
-		if (nfound!=null) {
-			
+
+		Node nfound = cacheMap.get(key);
+
+		if (nfound != null) {
+
 			// remove node from the cache and put it in the head of the list
 			removeNode(nfound);
 
