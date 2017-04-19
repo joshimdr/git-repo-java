@@ -11,10 +11,8 @@ import com.josh.tryout.util.Helper;
 
 /**
  * @author Munish
- *
  */
 public class SortOnValue {
-
 	/**
 	 * 
 	 */
@@ -52,13 +50,9 @@ public class SortOnValue {
 			public int compare(PairObject o1, PairObject o2) {
 				// TODO Auto-generated method stub
 				return (o1.value - o2.value);
-
 			}
-
 		});
-
 	}
-
 }
 
 class PairObject {
