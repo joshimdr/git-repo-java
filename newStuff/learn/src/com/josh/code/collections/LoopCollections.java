@@ -57,9 +57,10 @@ public class LoopCollections {
 
 		Integer old = 0;
 
-		Value res = null;
+		Value res = (Value) hm.get("munish");
 
-		if ((res = (Value) hm.get("munish")) != null) {
+		if (res != null) {
+			System.out.print("Adding value by 100");
 			res.setVal(res.getVal()+100);
 			//hm.put("munish", res);
 		}else{
