@@ -1,10 +1,12 @@
 package com.josh.tryout;
 
 import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
 
 
 /**
- * 
+ *
  * @author Munish
  *
  */
@@ -39,8 +41,8 @@ public class NameStringTest {
 
 		String firstOrLast = "knowsnothing";
 
-		assertNull(new NameString(firstOrLast).firstName, null);
-		assertNull(new NameString(firstOrLast).firstName, null);
+		assertNull(new NameString(firstOrLast).firstName, (String) null);
+		assertNull(new NameString(firstOrLast).firstName,(String) null);
 		assertEquals(new NameString(firstOrLast).firstNameORlastName, "knowsnothing");
 
 	}
@@ -50,9 +52,9 @@ public class NameStringTest {
 
 		String nameAsNull = null;
 
-		assertNull(new NameString(nameAsNull).firstName, null);
-		assertNull(new NameString(nameAsNull).firstName, null);
-		assertNull(new NameString(nameAsNull).firstNameORlastName, null);
+		assertNull(new NameString(nameAsNull).firstName, (String)null);
+		assertNull(new NameString(nameAsNull).firstName, (String)null);
+		assertNull(new NameString(nameAsNull).firstNameORlastName, (String)null);
 
 	}
 
@@ -61,9 +63,9 @@ public class NameStringTest {
 
 		String nameAsEmpty = "";
 
-		assertNull(new NameString(nameAsEmpty).firstName, null);
-		assertNull(new NameString(nameAsEmpty).firstName, null);
-		assertNull(new NameString(nameAsEmpty).firstNameORlastName, null);
+		assertNull(new NameString(nameAsEmpty).firstName, (String)null);
+		assertNull(new NameString(nameAsEmpty).firstName, (String)null);
+		assertNull(new NameString(nameAsEmpty).firstNameORlastName, (String)null);
 
 	}
 
