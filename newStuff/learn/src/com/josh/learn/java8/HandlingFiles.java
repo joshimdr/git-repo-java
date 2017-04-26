@@ -7,6 +7,8 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import static java.lang.System.out;
+
 public class HandlingFiles {
 
 	public static void main(String[] args) {
@@ -16,7 +18,7 @@ public class HandlingFiles {
 			fileReading();
 		} catch (IOException e) {
 			e.printStackTrace();
-			System.out.println("Error Writing to a file " + e.getMessage());
+			out.println("Error Writing to a file " + e.getMessage());
 		}
 
 	}
@@ -46,8 +48,9 @@ public class HandlingFiles {
 		for (List<String> str : list) {
 
 			for (String st : str) {
-				System.out.println(st);
+				out.print(st);
 			}
+			out.println();
 
 		}
 

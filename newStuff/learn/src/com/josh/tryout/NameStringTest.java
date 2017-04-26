@@ -41,8 +41,8 @@ public class NameStringTest {
 
 		String firstOrLast = "knowsnothing";
 
-		assertNull(new NameString(firstOrLast).firstName, (String) null);
-		assertNull(new NameString(firstOrLast).firstName,(String) null);
+		assertNull(new NameString(firstOrLast).firstName);
+		assertNull(new NameString(firstOrLast).firstName);
 		assertEquals(new NameString(firstOrLast).firstNameORlastName, "knowsnothing");
 
 	}
@@ -52,8 +52,8 @@ public class NameStringTest {
 
 		String nameAsNull = null;
 
-		assertNull(new NameString(nameAsNull).firstName, (String)null);
-		assertNull(new NameString(nameAsNull).firstName, (String)null);
+		assertNull(new NameString(nameAsNull).firstName);
+		assertNull(new NameString(nameAsNull).firstName);
 		assertNull(new NameString(nameAsNull).firstNameORlastName, (String)null);
 
 	}
