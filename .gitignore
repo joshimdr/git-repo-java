@@ -10,4 +10,8 @@ newStuff/learn/bin/
 
 newStuff/learn/.classpath
 
-newStuff/learn/.classpath
+
+/newStuff/learn/.idea/
+.idea/
+out/
+src/
