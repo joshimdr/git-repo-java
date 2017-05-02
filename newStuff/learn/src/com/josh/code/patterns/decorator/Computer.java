@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.josh.code.patterns.decoratorPattern;
+package com.josh.code.patterns.decorator;
 
 /**
  * @author Munish

@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.josh.code.patterns.decoratorPattern;
+package com.josh.code.patterns.decorator;
 
 /**
  * @author Munish
@@ -9,7 +9,7 @@ package com.josh.code.patterns.decoratorPattern;
  */
 public class Disk extends ComputerDeco {
 	
-	Computer c;
+	private Computer c;
 	
 	public Disk(Computer c) {
 		// TODO Auto-generated constructor stub

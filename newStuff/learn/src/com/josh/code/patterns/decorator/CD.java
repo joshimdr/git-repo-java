@@ -1,8 +1,9 @@
-package com.josh.code.patterns.decoratorPattern;
+package com.josh.code.patterns.decorator;
 
 public class CD extends ComputerDeco {
 	
 	Computer c;
+	static int counter =0;
 	
 	public CD(Computer c) {
 		// TODO Auto-generated constructor stub

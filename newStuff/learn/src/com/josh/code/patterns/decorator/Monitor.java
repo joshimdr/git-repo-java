@@ -1,4 +1,4 @@
-package com.josh.code.patterns.decoratorPattern;
+package com.josh.code.patterns.decorator;
 
 public class Monitor extends ComputerDeco {
 	
