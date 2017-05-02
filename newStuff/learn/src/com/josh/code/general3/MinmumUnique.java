@@ -64,7 +64,7 @@ public class MinmumUnique {
     }
 
 
-    private static Integer findMinimum(Set<> set) {
+    private static Integer findMinimum(Set<Integer> set) {
 
         int minimum = Integer.MAX_VALUE;
 
