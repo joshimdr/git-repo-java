@@ -25,6 +25,7 @@ public class TwoSum {
     public static void main(String[] args) {
 		
     	int result[] = twoSum(new int[]{3,2,4}, 6);
+
     	
     	for (int i = 0; i < result.length; i++) {
 			
