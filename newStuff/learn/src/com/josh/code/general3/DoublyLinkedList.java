@@ -25,19 +25,18 @@ public class DoublyLinkedList {
         head = first;
         tail = fourth;
 
-
         printList();
 
-        System.out.println("------");
-        System.out.println("head is :" + head.data);
+
+        System.out.println("\nhead is :" + head.data);
         System.out.println("tail is :" + tail.data);
 
 
         reverseList();
 
-        System.out.println("second list...");
-        System.out.println("222...head is :" + head.data);
-        System.out.println("222...tail is :" + tail.data);
+        System.out.println("\nsecond list (Reversed)...");
+        System.out.println("head is :" + head.data);
+        System.out.println("tail is :" + tail.data);
 
         printList();
 
