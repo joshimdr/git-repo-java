@@ -1,6 +1,5 @@
 package com.josh.code.treesAndGraphs;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
@@ -15,7 +14,7 @@ public class RouteBetweenNodes {
 
     }
 
-    private static boolean findPathBetweenNodes(TreeNode source, TreeNode destination) {
+    private static boolean isThereAPathBetweenNodes(TreeNode source, TreeNode destination) {
 
         Queue<TreeNode> q = new LinkedList<TreeNode>();
 
@@ -47,18 +46,3 @@ public class RouteBetweenNodes {
 
 
 }
-
-class TreeNode {
-
-    int id;
-    TreeNode left;
-    TreeNode right;
-    ArrayList<TreeNode> tnodes = new ArrayList<TreeNode>();
-    Status status;
-
-    public List getAllChilds() {
-        return tnodes;
-    }
-}
-
-enum Status {VISITED, UNVISITED, VISITING}

@@ -22,24 +22,17 @@ public class PhoneLetterCombination2 {
 
         Helper.print(combinations);
 
-
     }
 
 
     private static void findCombinations(int[] digits, List combinations, int index, String prefix) {
 
         if (index < digits.length) {
-
             for (char c : LETTERS[digits[index]].toCharArray()) {
-
                 findCombinations(digits, combinations, index + 1, prefix + c);
-
             }
-
         } else {
-
             combinations.add(prefix);
-
         }
 
 
